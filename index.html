@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Basic SEO -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jane Doe Resume</title>
+  <meta name="description" content="Resume of Jane Doe. Frontend developer with a focus on accessibility, performance, and clean UI architecture.">
+  <meta name="keywords" content="Jane Doe, resume, CV, frontend developer, web developer, accessibility, performance">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://example.com/resume">
+
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="Jane Doe Resume">
+  <meta property="og:description" content="Frontend developer focused on accessibility and performance. View education, skills, and career history.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/resume">
+  <meta property="og:image" content="https://example.com/og-image.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jane Doe Resume">
+  <meta name="twitter:description" content="Frontend developer focused on accessibility and performance.">
+  <meta name="twitter:image" content="https://example.com/og-image.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <!-- Structured data JSON-LD (optional but SEO friendly) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jane Doe",
+    "jobTitle": "Frontend Developer",
+    "url": "https://example.com",
+    "image": "https://example.com/jane.jpg",
+    "email": "mailto:jane@example.com",
+    "telephone": "+1-555-123-4567",
+    "sameAs": [
+      "https://www.linkedin.com/in/janedoe",
+      "https://github.com/janedoe"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header role="banner">
+    <h1>Jane Doe</h1>
+    <p>Frontend Developer</p>
+
+    <address>
+      <ul>
+        <li><a href="mailto:jane@example.com">jane@example.com</a></li>
+        <li><a href="tel:+15551234567">+1 555 123 4567</a></li>
+        <li><a href="https://example.com" rel="me">example.com</a></li>
+        <li><a href="https://www.linkedin.com/in/janedoe" rel="me">LinkedIn</a></li>
+        <li><a href="https://github.com/janedoe" rel="me">GitHub</a></li>
+      </ul>
+    </address>
+
+    <!-- Optional in-page navigation for quick jumps -->
+    <nav aria-label="Resume sections">
+      <ul>
+        <li><a href="#summary">Summary</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" role="main">
+    <section id="summary" aria-labelledby="summary-heading">
+      <h2 id="summary-heading">Professional Summary</h2>
+      <p>Frontend developer with 5 years of experience building accessible, performant web apps. Strong in semantic HTML, modern JavaScript, and component design. Known for clear communication and collaborative problem solving.</p>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <section aria-labelledby="tech-skills-heading">
+        <h3 id="tech-skills-heading">Technical</h3>
+        <ul>
+          <li>HTML5 and semantic markup</li>
+          <li>Accessible UI patterns and ARIA</li>
+          <li>JavaScript and TypeScript</li>
+          <li>React and state management</li>
+          <li>Performance audits and Core Web Vitals</li>
+          <li>Testing with Jest and Playwright</li>
+        </ul>
+      </section>
+      <section aria-labelledby="soft-skills-heading">
+        <h3 id="soft-skills-heading">Soft skills</h3>
+        <ul>
+          <li>Communication and documentation</li>
+          <li>Cross functional collaboration</li>
+          <li>Mentoring and code reviews</li>
+          <li>Agile delivery</li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="experience" aria-labelledby="experience-heading">
+      <h2 id="experience-heading">Experience</h2>
+
+      <article itemscope itemtype="https://schema.org/Organization">
+        <header>
+          <h3><span itemprop="name">Acme Corp</span> 
+            <small>Senior Frontend Developer</small>
+          </h3>
+          <p>
+            <time datetime="2023-04">Apr 2023</time> to <time datetime="2025-08">Aug 2025</time> 
+            <span aria-hidden="true">•</span> Remote
+          </p>
+        </header>
+        <ul>
+          <li>Led migration to a11y first component library that reduced defects by 30 percent.</li>
+          <li>Optimized critical paths to improve LCP by 35 percent across product pages.</li>
+          <li>Partnered with design and backend teams to deliver features on time.</li>
+        </ul>
+      </article>
+
+      <article itemscope itemtype="https://schema.org/Organization">
+        <header>
+          <h3><span itemprop="name">Bright Apps</span> 
+            <small>Frontend Engineer</small>
+          </h3>
+          <p>
+            <time datetime="2020-01">Jan 2020</time> to <time datetime="2023-03">Mar 2023</time> 
+            <span aria-hidden="true">•</span> San Francisco, CA
+          </p>
+        </header>
+        <ul>
+          <li>Built design system demo site with semantic HTML and progressive enhancement.</li>
+          <li>Reduced bundle size by 28 percent using code splitting and tree shaking.</li>
+          <li>Mentored 3 junior developers on accessibility best practices.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="education" aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <article>
+        <header>
+          <h3>State University, BS in Computer Science</h3>
+          <p>
+            <time datetime="2016-08">2016</time> to <time datetime="2020-05">2020</time>
+          </p>
+        </header>
+        <p>Relevant coursework includes Human Computer Interaction, Data Structures, and Web Development.</p>
+      </article>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+      <article>
+        <header>
+          <h3>Accessible UI Starter</h3>
+          <p>Open source starter that demonstrates semantic HTML and a11y patterns.</p>
+        </header>
+        <ul>
+          <li>Role was maintainer and primary contributor.</li>
+          <li>Focus on keyboard navigation and screen reader support.</li>
+          <li>Repository: <a href="https://github.com/janedoe/a11y-starter">github.com/janedoe/a11y-starter</a></li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="certifications" aria-labelledby="certs-heading">
+      <h2 id="certs-heading">Certifications</h2>
+      <ul>
+        <li>W3C Web Accessibility Certificate</li>
+        <li>Google Mobile Web Specialist</li>
+      </ul>
+    </section>
+  </main>
+
+  <aside aria-labelledby="extras-heading">
+    <h2 id="extras-heading">Additional Info</h2>
+    <p>Eligible to work in the US and EU. Available for remote roles.</p>
+    <p>Languages English native, Spanish intermediate.</p>
+  </aside>
+
+  <footer role="contentinfo">
+    <p>Last updated <time datetime="2025-08-22">Aug 22, 2025</time></p>
+  </footer>
+</body>
+</html>
